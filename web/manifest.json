@@ -1,11 +1,11 @@
 {
-    "name": "web_app",
-    "short_name": "web_app",
+    "name": "Stechnology",
+    "short_name": "Stech",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
     "theme_color": "#0175C2",
-    "description": "A new Flutter project.",
+    "description": "Dẫn lối công nghệ, kiến tạo tương lai.",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../constants.dart';
+import '../utils/common_func.dart';
 import 'default_button.dart';
 
 class HireMeCard extends StatelessWidget {
@@ -37,21 +38,21 @@ class HireMeCard extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                  "Starting New Project?",
+                  "Bắt đầu dự án mới?",
                   style: TextStyle(fontSize: 42, fontWeight: FontWeight.bold),
                 ),
                 SizedBox(height: kDefaultPadding / 2),
                 Text(
-                  "Get an estimate for the new project",
+                  "Nhận ước tính cho dự án mới của bạn!",
                   style: TextStyle(fontWeight: FontWeight.w200),
                 )
               ],
             ),
           ),
           DefaultButton(
-            text: "Hire Me!",
+            text: "Hợp tác cùng chúng tôi!",
             imageSrc: "assets/images/hand.png",
-            press: () {},
+            press: () => CommonFunc.launch("https://www.linkedin.com/in/l%C6%B0%C6%A1ng-sang-7b1511173/"),
           )
         ],
       ),

@@ -1,6 +1,6 @@
 
 import 'package:flutter/material.dart';
-import 'package:web_app/constants.dart';
+import 'package:stechnology/constants.dart';
 
 import 'components/logo_blur_box.dart';
 import 'components/menu.dart';
@@ -26,10 +26,12 @@ class TopSection extends StatelessWidget {
         child: Stack(
           children: [
             LogoAndBlurBox(size: size),
-            Positioned(
-              bottom: 0,
-              right: 0,
-              child: PersonPic(),
+            Align(
+              alignment: Alignment.centerRight,
+              child: Padding(
+                padding: const EdgeInsets.only(right: 60),
+                child: PersonPic(),
+              ),
             ),
             Positioned(
               bottom: 0,

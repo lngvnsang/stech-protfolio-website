@@ -1,6 +1,8 @@
 import 'dart:ui';
 
+import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 import '../../../constants.dart';
 
@@ -28,29 +30,44 @@ class GlassContent extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Text(
-                "Hello There!",
-                style: Theme.of(context)
-                    .textTheme
-                    .headlineSmall!
-                    .copyWith(color: Colors.white),
+              AnimatedTextKit(
+                animatedTexts: [
+                  TypewriterAnimatedText(
+                    'S-Technology',
+                    textStyle: GoogleFonts.lobster(
+                        textStyle: const TextStyle(
+                            fontSize: 92.0,
+                            fontWeight: FontWeight.bold,
+                            color: Colors.white)),
+                    textAlign: TextAlign.center,
+                    speed: const Duration(milliseconds: 200),
+                  ),
+                ],
+                repeatForever: true,
+                isRepeatingAnimation: true,
+                pause: const Duration(milliseconds: 1000),
               ),
-              Text(
-                "Robbie \nRutherford",
-                style: TextStyle(
-                  fontSize: 100,
-                  fontWeight: FontWeight.bold,
-                  color: Colors.white,
-                  height: 1.5,
+              SizedBox(
+                height: 100,
+                child: AnimatedTextKit(
+                  animatedTexts: [
+                    FadeAnimatedText(
+                      'Stechnology',
+                      textStyle: TextStyle(
+                          fontSize: 32.0,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.white),
+                    ),
+                    FadeAnimatedText('Dẫn lối công nghệ, kiến tạo tương lai.',
+                        textStyle: TextStyle(
+                            fontSize: 30.0,
+                            fontFamily: 'Canterbury',
+                            color: Colors.white),
+                        duration: const Duration(milliseconds: 4000)),
+                  ],
+                  repeatForever: true,
                 ),
               ),
-              Text(
-                "Creative Design Director",
-                style: Theme.of(context)
-                    .textTheme
-                    .headlineSmall!
-                    .copyWith(color: Colors.white),
-              )
             ],
           ),
         ),

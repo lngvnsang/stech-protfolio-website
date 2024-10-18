@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:web_app/constants.dart';
-import 'package:web_app/home_screen.dart';
+import 'package:stechnology/constants.dart';
+import 'package:stechnology/home_screen.dart';
 
 void main() {
   runApp(MyApp());
@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Flutter Demo',
+      title: 'STechnology - Giới thiệu',
       theme: ThemeData(
         inputDecorationTheme: kDefaultInputDecorationTheme,
         visualDensity: VisualDensity.adaptivePlatformDensity,

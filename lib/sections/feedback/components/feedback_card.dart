@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:web_app/models/Feedback.dart';
+import 'package:stechnology/models/Feedback.dart';
 
 import '../../../constants.dart';
 
@@ -69,7 +69,7 @@ class _FeedbackCardState extends State<FeedbackCard> {
             ),
             SizedBox(height: kDefaultPadding * 2),
             Text(
-              "Ronald Thompson",
+              feedbacks[widget.index].name,
               style: TextStyle(fontWeight: FontWeight.bold),
             )
           ],

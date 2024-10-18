@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:web_app/components/hireme_card.dart';
-import 'package:web_app/components/section_title.dart';
-import 'package:web_app/constants.dart';
-import 'package:web_app/models/RecentWork.dart';
+import 'package:stechnology/components/hireme_card.dart';
+import 'package:stechnology/components/section_title.dart';
+import 'package:stechnology/constants.dart';
+import 'package:stechnology/models/RecentWork.dart';
 
 import 'components/recent_work_card.dart';
 
@@ -28,8 +28,8 @@ class RecentWorkSection extends StatelessWidget {
             child: HireMeCard(),
           ),
           SectionTitle(
-            title: "Recent Woorks",
-            subTitle: "My Strong Arenas",
+            title: "Sản phẩm",
+            subTitle: "Thành tựu",
             color: Color(0xFFFFB100),
           ),
           SizedBox(height: kDefaultPadding * 1.5),

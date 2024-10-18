@@ -12,13 +12,13 @@ class Service {
 List<Service> services = [
   Service(
     id: 1,
-    title: "Graphic Design",
+    title: "Mobile App",
     image: "assets/images/graphic.png",
     color: Color(0xFFD9FFFC),
   ),
   Service(
     id: 2,
-    title: "Web Design",
+    title: "Backend",
     image: "assets/images/desktop.png",
     color: Color(0xFFE4FFC7),
   ),

@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:web_app/models/RecentWork.dart';
+import 'package:stechnology/models/RecentWork.dart';
 
 import '../../../constants.dart';
+import '../../../utils/common_func.dart';
 
 class RecentWorkCard extends StatefulWidget {
   // just press "Command + ."
@@ -54,13 +55,17 @@ class _RecentWorkCardState extends State<RecentWorkCard> {
                       recentWorks[widget.index].title,
                       style: Theme.of(context)
                           .textTheme
-                          .headlineSmall!
+                          .bodyLarge!
                           .copyWith(height: 1.5),
                     ),
                     SizedBox(height: kDefaultPadding),
-                    Text(
-                      "View Details",
-                      style: TextStyle(decoration: TextDecoration.underline),
+                    GestureDetector(
+                      onTap: () =>
+                          CommonFunc.launch(recentWorks[widget.index].link),
+                      child: Text(
+                        "View Details",
+                        style: TextStyle(decoration: TextDecoration.underline),
+                      ),
                     )
                   ],
                 ),

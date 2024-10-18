@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:web_app/components/section_title.dart';
-import 'package:web_app/constants.dart';
-import 'package:web_app/models/Service.dart';
+import 'package:stechnology/components/section_title.dart';
+import 'package:stechnology/constants.dart';
+import 'package:stechnology/models/Service.dart';
 
 import 'components/service_card.dart';
 
@@ -15,8 +15,8 @@ class ServiceSection extends StatelessWidget {
         children: [
           SectionTitle(
             color: Color(0xFFFF0000),
-            title: "Service Offerings",
-            subTitle: "My Strong Arenas",
+            title: "Dịch vụ",
+            subTitle: "Sản phẩm cung cấp",
           ),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,

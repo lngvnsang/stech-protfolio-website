@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:web_app/components/default_button.dart';
-import 'package:web_app/components/section_title.dart';
-import 'package:web_app/constants.dart';
+import 'package:stechnology/components/default_button.dart';
+import 'package:stechnology/components/section_title.dart';
+import 'package:stechnology/constants.dart';
 
+import '../../utils/common_func.dart';
 import 'components/socal_card.dart';
 
 class ContactSection extends StatelessWidget {
@@ -23,8 +24,8 @@ class ContactSection extends StatelessWidget {
         children: [
           SizedBox(height: kDefaultPadding * 2.5),
           SectionTitle(
-            title: "Contact Me",
-            subTitle: "For Project inquiry and information",
+            title: "Liên hệ",
+            subTitle: "Hợp tác cùng chúng tôi",
             color: Color(0xFF07E24A),
           ),
           ContactBox()
@@ -60,20 +61,26 @@ class ContactBox extends StatelessWidget {
               SocalCard(
                 color: Color(0xFFD9FFFC),
                 iconSrc: "assets/images/skype.png",
-                name: 'TheFlutterWay',
-                press: () {},
+                name: 'Lương Văn Sang',
+                press: () {
+                  CommonFunc.launch("https://join.skype.com/invite/uFXg3x0Y9iQm");
+                },
               ),
               SocalCard(
                 color: Color(0xFFE4FFC7),
                 iconSrc: "assets/images/whatsapp.png",
-                name: 'TheFlutterWay',
-                press: () {},
+                name: '@lngvnsang',
+                press: () {
+                  CommonFunc.launch("https://t.me/lngvnsang");
+                },
               ),
               SocalCard(
                 color: Color(0xFFE8F0F9),
                 iconSrc: "assets/images/messanger.png",
-                name: 'TheFlutterWay',
-                press: () {},
+                name: 'Sang Lương',
+                press: () {
+                  
+                },
               ),
             ],
           ),
