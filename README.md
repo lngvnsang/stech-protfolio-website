@@ -1,6 +1,4 @@
-# A Portfolio Website - Flutter Web
-
-## [Watch it on YouTube](https://youtu.be/Y4oJMiEwlBg)
+# Stech Website - Flutter Web
 
 ### This UI is not Responsive
 
@@ -8,6 +6,5 @@ A nice clean Portfolio Website for Designer or developers. Which includes almost
 
 ### Protfolio Website Final UI
 
-![App UI](/intro.gif)
 <br>
 <img src="/Portfolio.png" alt="portfolio" width="600">
